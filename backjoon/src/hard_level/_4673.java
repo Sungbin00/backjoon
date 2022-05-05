@@ -15,18 +15,18 @@ public class _4673 {
 			sum += i;
 			numbers[i] = sum;
 			sum = 0;
-		} // 생성자 숫자를 배열 numbers에 넣는다.
-		for (int j=1; j<=10000; j++) {
-			for (int e : numbers) {
-				if (e == numbers[10000]) {
-					System.out.println(j);
+		}
+		for (int i=1; i<=10000; i++) {
+			for (int j=0; j<10000; j++) {
+				if (numbers[j] == numbers[10000]) {
+					System.out.println(i);
 					break;
 				}
-				if (j == e) {
+				if (i == numbers[j]) {
 					break;
 				}
 			}
-		}// j가 생성자 숫자에 해당되면 다음 j로 넘어가고, 모든 생성자 숫자에 해당되지 않는다면 j를 출력하고 다음 j로 넘어간다.
+		}
 
 	}
 
